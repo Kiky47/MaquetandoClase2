@@ -21,6 +21,7 @@ nav{
   background-color: blue ;
   float: left;
   width: 30%;
+  color: white;
 }
 
 main{
@@ -40,6 +41,15 @@ footer{
   text-align: center;
   height: 100px;
 }
-@media screen and (max-width: 600px){
-    ul.centernav li.right, 
-  ul.centernav li {float: none;}
+@media screen and (max-width: 800px){
+  ul.sidenav li.right,  ul.sidenav li {
+      float: none;
+  }
+  nav{
+    display: block ;
+    width: 100%;
+  }
+  main{
+    margin-left: 0;
+  }
+} 
